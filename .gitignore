@@ -67,3 +67,11 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+# Compile Folders
+Component Library Source/TMSWEB/
+Component Library Source/Win32/
+Core Source/TMSWEB/
+Core Source/Win32/
+Demo/TMSWEB/
+Demo/Win32/

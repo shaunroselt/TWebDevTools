@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2262A533-F93F-46FB-A4B4-4D8DE39FE84C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Component Library Source\TMSWEBDevTools.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Core Source\TMSWEBDevToolsWEB.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demo\WebDevTools.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TMSWEBDevTools">
+        <MSBuild Projects="Component Library Source\TMSWEBDevTools.dproj"/>
+    </Target>
+    <Target Name="TMSWEBDevTools:Clean">
+        <MSBuild Projects="Component Library Source\TMSWEBDevTools.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TMSWEBDevTools:Make">
+        <MSBuild Projects="Component Library Source\TMSWEBDevTools.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TMSWEBDevToolsWEB">
+        <MSBuild Projects="Core Source\TMSWEBDevToolsWEB.dproj"/>
+    </Target>
+    <Target Name="TMSWEBDevToolsWEB:Clean">
+        <MSBuild Projects="Core Source\TMSWEBDevToolsWEB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TMSWEBDevToolsWEB:Make">
+        <MSBuild Projects="Core Source\TMSWEBDevToolsWEB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WebDevTools">
+        <MSBuild Projects="Demo\WebDevTools.dproj"/>
+    </Target>
+    <Target Name="WebDevTools:Clean">
+        <MSBuild Projects="Demo\WebDevTools.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WebDevTools:Make">
+        <MSBuild Projects="Demo\WebDevTools.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TMSWEBDevTools;TMSWEBDevToolsWEB;WebDevTools"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TMSWEBDevTools:Clean;TMSWEBDevToolsWEB:Clean;WebDevTools:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TMSWEBDevTools:Make;TMSWEBDevToolsWEB:Make;WebDevTools:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
