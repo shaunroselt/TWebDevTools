@@ -35,10 +35,6 @@ procedure TWebDevTools.SetEnabled(const Value: boolean);
 begin
   FEnabled := Value;
 
-//  asm
-//    alert(DisableDevtool.isRunning);
-//  end;
-
   if (FEnabled) then
   begin
     // Browser Developer Tools can be opened
