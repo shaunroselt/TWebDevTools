@@ -167,7 +167,7 @@
         <DCCReference Include="rtl.dcp"/>
         <DCCReference Include="vcl.dcp"/>
         <DCCReference Include="TMSWEBCorePkgLibDXE15.dcp"/>
-        <DCCReference Include="WEBLIB.DevTools.pas"/>
+        <DCCReference Include="WEBLib.DevTools.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

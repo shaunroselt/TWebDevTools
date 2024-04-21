@@ -4,7 +4,7 @@ interface
 
 uses
   System.SysUtils, System.Classes, JS, Web, WEBLib.Graphics, WEBLib.Controls,
-  WEBLib.Forms, WEBLib.Dialogs, WEBLIB.DevTools, Vcl.Controls, Vcl.StdCtrls,
+  WEBLib.Forms, WEBLib.Dialogs, WEBLib.DevTools, Vcl.Controls, Vcl.StdCtrls,
   WEBLib.StdCtrls;
 
 type

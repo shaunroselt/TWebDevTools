@@ -25,12 +25,10 @@
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
-{$DESCRIPTION 'TMS WEB Froala Editor'}
-{$RUNONLY}
 {$IMPLICITBUILD ON}
 
 contains
-  WEBLib.DevTools in '.\WEBLib.DevTools.pas',
-  WEBLib.DevToolsReg in '.\WEBLib.DevToolsReg.pas';
+  WEBLib.DevToolsReg in 'WEBLib.DevToolsReg.pas',
+  WEBLib.DevTools in 'WEBLib.DevTools.pas';
 
 end.

@@ -33,6 +33,6 @@ requires
   TMSWEBCorePkgLibDXE15;
 
 contains
-  WEBLIB.DevTools in 'WEBLIB.DevTools.pas';
+  WEBLib.DevTools in 'WEBLib.DevTools.pas';
 
 end.
