@@ -16,3 +16,19 @@ This is also the default value for `Enabled`.
 
 ### Enabled = False
 If `Enabled` is `false`, then you're not able to open the browser's developer tools.
+
+# FAQ
+
+### What happens if someone manages to open the browser's Developer Tools?
+The web page will instantly close itself if it detects that someone has managed to open the browser's Developer Tools 
+
+### What browsers are supported?
+| Browser             | Works          |
+| ------------------- | -------------- |
+| Microsoft Edge      | ✅             |
+| Google Chrome       | ✅             |
+| Mozilla Firefox     | ✅             |
+| Apple Safari        | Not Yet Tested  |
+| Internet Explorer   | ✅             |
+| 360 Browser         | ✅             |
+| QQ Browser          | ✅             |
